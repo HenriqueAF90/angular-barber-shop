@@ -1,0 +1,34 @@
+.container_card{
+    margin-left: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    /*definit o tamanho do card*/
+    width: 150px;
+    height: 200px;
+    
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+.container_card:hover {
+    background-color: #868585;
+}
+.services > h1{
+    font-size: 15px;
+}
+.description_services > p{
+    font-size: 10px;
+    margin-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.services_image > img{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}

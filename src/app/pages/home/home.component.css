@@ -1,0 +1,15 @@
+body{
+    background-image: url('../../../assets/capa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90%;
+}
+.container_title{
+    padding-top: 50px;
+}
+.container_services{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,9 @@
+.container_title{
+    display: flex;
+    align-items: center;
+}
+.info_tltle{
+    margin-left: 100px;
+    text-align: left;
+    max-width: 30%;
+}

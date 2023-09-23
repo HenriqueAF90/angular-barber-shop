@@ -1,0 +1,17 @@
+.container_menu > mat-toolbar{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.itens_menu > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+}
+.itens_menu > ul > li{
+    list-style: none;
+    margin-left: 40px;
+    
+}
