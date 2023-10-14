@@ -1,0 +1,48 @@
+{
+    "cliente":{
+       "id":"00001",
+       "cpf": "99999999999",
+       "nome":"henrique",
+       "idade":"25",
+       "sexo":"M"
+    },
+    "contato_cliente":{
+       "id_cliente":"00001",
+       "email":"teste@testes.com.br",
+       "telfone":"99999999999"
+    },
+    "endreco_cliente":{
+       "id_cliente":"00001",
+       "logradouro":"rua sem saida",
+       "numero":"999",
+       "bairro":"Novo Mundo",
+       "complemento":"bloco 10",
+       "cep":"99999999"
+       "cidade":"BH",
+       "estado":"MG",
+       "endereco_principal":"S"
+    },
+
+
+
+    "barbeir":{
+       "id_barbeiro":"00001",
+       "cnpj": "99999999999",
+       "nome":"Ze"
+    },
+    "servicos_barbeiro":{
+       "id_barbeiro":"00001",
+       "tipo_serviço":[
+        "corte", "dread"
+       ]
+    },
+    "horarios_atendimento": {
+        "id_barbeiro": "00515"
+        "dia_semana": [
+            "seg", "ter"
+        ],
+        "horario": [
+            "12:00", "13:00"
+        ]
+    }
+ }

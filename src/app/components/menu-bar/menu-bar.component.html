@@ -1,8 +1,17 @@
 <div class="container_menu">
     <mat-toolbar>
-        <span>Barbearia do Zé</span>
+        <span>
+            <a [routerLink]="['/']">
+                Barbearia do Zé
+            </a>
+        </span>
     <div class="itens_menu">
         <ul>
+            <li> 
+                <a [routerLink]="['/cadastro']">
+                    Cadastre-se
+                </a>
+            </li>
             <li> Linkedin </li>
             <li> Github </li>
         </ul>

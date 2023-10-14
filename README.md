@@ -1,4 +1,4 @@
-# AngularBarberShopLandingPage
+# AngularBarberShop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
@@ -25,3 +25,64 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Diagrama de classe Cliente Barbearia
+
+```mermaid
+classDiagram
+    class Cliente {
+        + id: PK
+        + cpf: PK
+        nome
+        idade
+        sexo
+    }
+
+    class ContatoCliente {
+        + id_cliente: FK
+        email
+        telefone
+    }
+
+    class EnderecoCliente {
+        + id_cliente: FK
+        logradouro
+        numero
+        bairro
+        complemento
+        cep
+        cidade
+        estado
+        endereco_principal
+    }
+
+    Cliente "1" -- "n" ContatoCliente : possui
+    Cliente "1" -- "n" EnderecoCliente : possui
+
+```
+# Diagrama de classe Barbeiro
+```mermaid
+classDiagram
+    class Barbeiro {
+        + id_barbeiro: PK
+        cnpj
+        nome
+    }
+
+    class ServicoBarbeiro {
+        + id_servico: PK
+        fk id_barbeiro: FK
+        tipo_servico: string[]
+    }
+
+    class HorarioAtendimento {
+        + id_horario: PK
+        fk id_barbeiro: FK
+        dia_semana: string[]
+        horario: string[]
+    }
+
+    Barbeiro "1" -- "n" ServicoBarbeiro : presta
+    Barbeiro "1" -- "n" HorarioAtendimento : possui
+
+```

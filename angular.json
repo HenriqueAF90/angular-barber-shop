@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-barber_shop-landing_page:build:production"
+              "browserTarget": "angular-barber_shop:build:production"
             },
             "development": {
-              "browserTarget": "angular-barber_shop-landing_page:build:development"
+              "browserTarget": "angular-barber_shop:build:development"
             }
           },
           "defaultConfiguration": "development"
